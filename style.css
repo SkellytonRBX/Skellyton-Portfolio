@@ -1,7 +1,45 @@
 
 h1 {
-    font-size: 36px;
-    text-align: center;
-    font-family: 'roboto condensed';
-    color: #ff6b6b;
+    font-size: 16px;
+    font-family: 'Fira Code', sans-serif;
+    font-weight: normal;
+    color: #000000;
+    padding-top: 450px;
+}
+
+.Enter-Buttons {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 10px;
+}
+
+.About-me {
+    padding: 0px 5px;
+    font-size: 14px;
+    font-family: 'Fira Code', sans-serif;
+    color: #000000;
+    background-color: white;
+    border: none;
+    cursor:pointer;
+    transition:all 0.1s ease;
+}
+
+.About-me:hover {
+    transform: scale(0.95);
+}
+
+.Contact {
+    padding: 0px 5px;
+    font-size: 14px;
+    font-family: 'Fira Code', sans-serif;
+    color: #000000;
+    background-color: white;
+    border: none;
+    cursor:pointer;
+    transition:all 0.1s ease;
+}
+
+.Contact:hover {
+    transform: scale(0.95);
 }
