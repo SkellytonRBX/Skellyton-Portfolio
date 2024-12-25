@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <h1 class="Title" TypeWriterEffect="yes">[Showcase.]</h1>
+        <div class="grain-overlay"></div>
+        <hr>
+       <div>Heres some projects I have made for my portfolio or personal projects for learning:</div>
+
+       <div class="Enter-Buttons">
+        <button id="MC" class="Menu-Button">[Music Composition.]</button>
+        <button id="UID"class="Menu-Button">[UI Design.]</button>
+        <button id="S"class="Menu-Button">[Scripting.]</button>
+       </div>
+
+        <button id = "backButton" class="Menu-Button" style="margin: 35px 0 0 0;">[Back.]</button>
+
+        <script>
+            const BackButton = document.getElementById('backButton')
+
+            const MusicCompositionButton = document.getElementById('MC')
+            const UIDesignButton = document.getElementById('UID')
+            const ScriptingButton = document.getElementById('S')
+
+           if (BackButton) {
+            BackButton.onclick = () => {
+                history.back();
+            };
+           };
+
+           if (MusicCompositionButton) {
+            MusicCompositionButton.onclick = () => {
+                window.location.href = "Showcase-Subpages/Music-Composition.html"
+            };
+           };
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+     <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <h1 class="Title" TypeWriterEffect="yes">[Contact.]</h1>
+        <div class="grain-overlay"></div>
+        <hr>
+        <p>If you need to get in touch with me, feel free to message me on Discord at <strong>skelyton_1</strong>. I will do my best to respond as soon as possible. Please include your name and the reason for contacting me in your message. Looking forward to hearing from you!</p>
+        <button id = "backButton" class="Menu-Button" style="margin: 35px 0 0 0;">[Back.]</button>
+
+        <script>
+            const BackButton = document.getElementById('backButton')
+
+           if (BackButton) {
+            BackButton.onclick = function() {
+                history.back();
+            };
+           };
+
+        </script>
+    </body>
+</html>

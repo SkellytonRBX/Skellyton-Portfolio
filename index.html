@@ -2,15 +2,49 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>[Welcome to Skellyton's Portfolio.]</h1>
+    <h1 class="Title" TypeWriterEffect = "yes", style="margin: 450px 0 0 0; font-size: 18px;">[Welcome to Skellyton's Portfolio.]</h1>
+
+    <div class="grain-overlay"></div>
+
     <div class="Enter-Buttons">
-        <button class="About-me">[About me.]</button>
-        <button class="Contact">[Contact.]</button>
+        <button class="Menu-Button" data-button="About-Me">[About me.]</button>
+        <button class="Menu-Button" data-button="Showcase">[Showcase.]</button>
+        <button class="Menu-Button" data-button="Pricing">[Pricing.]</button>
+        <button class="Menu-Button" data-button="Contact">[Contact.]</button>
     </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const AboutMeButton = document.querySelector('button[data-button="About-Me"]');
+        const ShowcaseButton = document.querySelector('button[data-button="Showcase"]');
+        const PricingButton = document.querySelector('button[data-button="Pricing"]');
+        const ContactButton = document.querySelector('button[data-button="Contact"]');
+
+        if (AboutMeButton) {
+    AboutMeButton.onclick = () => {
+        window.location.href = "Pages/About-me.html";
+    };
+}
+        
+        if (PricingButton) {
+    PricingButton.onclick = () => {
+        window.location.href = "Pages/Pricing.html";
+    };
+}
+        if (ContactButton) {
+    ContactButton.onclick = () => {
+        window.location.href = "Pages/Contact.html";
+    };
+}
+
+        if (ShowcaseButton) {
+        ShowcaseButton.onclick = () => {
+               window.location.href = "Pages/Showcase.html"
+            };
+        };
+});
+    </script>
 </body>
 </html>

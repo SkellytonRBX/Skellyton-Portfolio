@@ -1,45 +1,164 @@
 
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
+
 h1 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Fira Code', sans-serif;
     font-weight: normal;
-    color: #000000;
-    padding-top: 450px;
+    color: #ffffff;
+    background-color: transparent;
+    margin: 10px 0 0 0;
+}
+
+.Title {
+    font-size: 30px;
+    font-family: 'Fira Code', sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: transparent;
+    margin: 10px 0 0 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(Images/MenuCover.jpg);
+}
+
+.grain-overlay {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 101vw;
+    height: 101vh;
+    background: url('Images/Grain.gif') center center / cover; 
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.09;
+    animation: none;
+}
+
+div {
+    background-color: transparent;
+}
+
+table {
+    font-size: 14px;
+    font-family: 'Fira Code', sans-serif;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+    transition: all 0.1s ease;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+
+th {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+li {
+    font-size: 12px;
+    font-family: 'Fira Code', sans-serif;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+    transition: all 0.1s ease;
+}
+
+.Title[TypeWriterEffect = "yes"] {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+    typing 1.5s steps(45, end),
+    infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
 .Enter-Buttons {
    display: flex;
    flex-direction: column;
    align-items: start;
-   gap: 10px;
+   padding: 10px 0px;
 }
 
-.About-me {
-    padding: 0px 5px;
+.Menu-Button {
     font-size: 14px;
-    font-family: 'Fira Code', sans-serif;
-    color: #000000;
-    background-color: white;
-    border: none;
-    cursor:pointer;
-    transition:all 0.1s ease;
+   font-family: 'Fira Code', sans-serif;
+   color: #ffffff;
+   background-color: transparent;
+   border: none;
+   cursor:pointer;
+   transition:all 0.1s ease-in-out;
+   gap: 50px;
 }
 
-.About-me:hover {
+.Menu-Button:hover {
     transform: scale(0.95);
 }
 
-.Contact {
-    padding: 0px 5px;
-    font-size: 14px;
-    font-family: 'Fira Code', sans-serif;
-    color: #000000;
-    background-color: white;
-    border: none;
-    cursor:pointer;
-    transition:all 0.1s ease;
+@keyframes EnterAnim {
+    0% {
+        transform: translateX(-400px);
+    }
+
+    100% {
+        transform: translateX(0px); 
+    }
 }
 
-.Contact:hover {
-    transform: scale(0.95);
+p {
+    background-color: transparent;
+    font-size: 14px;
+   font-family: 'Fira Code', sans-serif;
+   color: #ffffff;
+   background-color: transparent;
+   border: none;
+   cursor:pointer;
+   transition:all 0.1s ease;
+   text-align: left;
+   width: 75%;
+   margin: 25px 0 0 0;
+   animation: EnterAnim 0.4s ease-in-out;
+}
+
+div {
+    background-color: transparent;
+    font-size: 14px;
+   font-family: 'Fira Code', sans-serif;
+   color: #ffffff;
+   background-color: transparent;
+   border: none;
+   cursor:pointer;
+   transition:all 0.1s ease;
+   text-align: left;
+   width: 75%;
+   margin: 25px 0 0 0;  
+   animation: EnterAnim 0.4s ease-in-out;
 }

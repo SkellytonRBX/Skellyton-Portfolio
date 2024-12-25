@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../../style.css">
+        <title>Music-Composition</title>
+        <style>
+            div {
+                display: flex; 
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="Title" TypeWriterEffect="yes">[Music Composition.]</h1>
+        <div class="grain-overlay"></div>
+        <hr>
+
+        <div>
+            <button class="Menu-Button">[Adventure/Exploration.]</button>
+            <button class="Menu-Button">[Action/Combat.]</button>
+            <button class="Menu-Button">[Mystery/Horror.]</button>
+            <button class="Menu-Button">[Casual/Relaxing.]</button>
+            <button class="Menu-Button">[Misc.]</button>
+        </div>
+        <button id = "backButton" class="Menu-Button" style="margin: 35px 0 0 0;">[Back.]</button>
+
+        <script>
+            const BackButton = document.getElementById('backButton')
+           if (BackButton) {
+            BackButton.onclick = function() {
+                history.back();
+            };
+           };
+        </script>
+    </body>
+</html>
